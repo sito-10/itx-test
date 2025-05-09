@@ -39,3 +39,40 @@ itx-test/
 ├── README.md
 └── .gitignore
 ```
+
+
+## POSIBLES MEJORAS
+
+Otra opción es la creación de clases estáticas para pintar el HTML y clases objeto para el procesamiento de los datos, y mediante AJAX usar el recargo de zonas parciales.
+
+La estructura sería algo similar a esto:
+
+```css
+
+itx-test/
+│── index.php
+│── classes/
+|   └── products/
+|       └── products_obj.php
+|       └── products_viewer.php
+│── css/
+│   └── styles.css
+│── js/
+│   └── main.js
+│   └── utils.js
+│── api/
+│   ├── get_products.php
+│   ├── get_product_details.php
+│   └── add_to_cart.php
+│── utils/
+│   └── cache.py
+├── README.md
+└── .gitignore
+```
+
+## USO
+Se han generado dos ramas:
+
+main: para el uso en producción
+dev: para realizar cambios y posibles mejoras con el paso del tiempo.
+Lo ideal podría ser trabajar siempre en "dev" y realizar "pull-requests" con la rama main siempre y cuando se hayan realizado los tests y se hayan verificado correctamente.
