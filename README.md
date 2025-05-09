@@ -39,3 +39,13 @@ itx-test/
 ├── README.md
 └── .gitignore
 ```
+
+
+### USO
+
+Se han generado dos ramas:
+- main: para el uso en producción
+- dev: para realizar cambios y posibles mejoras con el paso del tiempo.
+
+Lo ideal podría ser trabajar siempre en "dev" y realizar "pull-requests" con la rama main siempre y cuando se hayan realizado los tests y se hayan verificado correctamente.
+
